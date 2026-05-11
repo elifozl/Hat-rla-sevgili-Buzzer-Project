@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Elif Özel",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -51, "left": 290.8, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -74.4,
+      "left": 405,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 13.55,
+      "left": 441.6,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "bz1:1", "bb1:13t.b", "", [ "$bb" ] ],
+    [ "bz1:2", "bb1:14t.b", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:14t.c", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:20t.c", "", [ "$bb" ] ],
+    [ "bb1:13t.d", "uno:GND.3", "green", [ "v0" ] ],
+    [ "bb1:20t.d", "uno:6", "magenta", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
