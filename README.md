@@ -1,1 +1,1 @@
-# Hat-rla-sevgili-Buzzer-Project
+# Hatirla-sevgili-Buzzer-Project
